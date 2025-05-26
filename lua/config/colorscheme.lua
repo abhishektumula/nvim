@@ -14,13 +14,13 @@ return {
         require("tokyonight").setup(opts)
         -- vim.cmd([[colorscheme tokyonight]])
         -- Fully transparent UI elements
-        vim.cmd([[
-      hi Normal guibg=NONE ctermbg=NONE
-      hi NormalNC guibg=NONE ctermbg=NONE
-      hi NormalFloat guibg=NONE ctermbg=NONE
-      hi FloatBorder guibg=NONE ctermbg=NONE
-      hi CursorLine guibg=NONE ctermbg=NONE
-      hi CursorLineNr guibg=NONE ctermbg=NONE
+        vim.cmd([[                                                          
+      hi Normal guibg=NONE ctermbg=NONE                                     
+      hi NormalNC guibg=NONE ctermbg=NONE                                   
+      hi NormalFloat guibg=NONE ctermbg=NONE                                
+      hi FloatBorder guibg=NONE ctermbg=NONE                                
+      hi CursorLine guibg=NONE ctermbg=NONE                                 
+      hi CursorLineNr guibg=NONE ctermbg=NONE                               
     ]])
     end,
 }
