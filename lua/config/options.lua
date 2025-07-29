@@ -3,4 +3,4 @@
 -- Add any additional options here
 vim.opt.list = false
 vim.cmd([[autocmd VimEnter * if argc() == 0 | enew | endif]])
-
+vim.opt.cmdheight = 1

@@ -3,7 +3,7 @@ require("config.lazy")
 vim.cmd("hi CursorLine gui=NONE guibg=NONE")
 vim.opt.shiftwidth = 2
 vim.opt.background = "dark" -- make sure the theme is in dark mode
-
+vim.opt.cmdheight = 1 
 -- Universal transparency overrides
 local transparent_groups = {
   "Normal",
@@ -36,7 +36,7 @@ local transparent_groups = {
 }
 
 for _, group in ipairs(transparent_groups) do
-  vim.api.nvim_set_hl(0, group, { bg = "none" })
+  vim.api.nvim_set_hl(0, group, { bg = "#000000" })
 end
 
 
