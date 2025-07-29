@@ -14,3 +14,11 @@ vim.api.nvim_create_autocmd("VimEnter", {
     end
   end,
 })
+
+
+-- Clear command line after pressing enter
+vim.api.nvim_create_autocmd("CmdlineLeave", {
+  callback = function()
+    vim.cmd("echo ''")
+  end,
+})
