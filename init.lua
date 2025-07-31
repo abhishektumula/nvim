@@ -36,7 +36,7 @@ local transparent_groups = {
 }
 
 for _, group in ipairs(transparent_groups) do
-  vim.api.nvim_set_hl(0, group, { bg = "#000000" })
+  vim.api.nvim_set_hl(0, group, { bg = "NONE" })
 end
 
 
