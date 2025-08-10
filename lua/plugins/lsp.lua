@@ -17,6 +17,7 @@ return {
       require("mason").setup()
       require("mason-lspconfig").setup({
         ensure_installed = {
+          "jdtls",
           "pyright",     -- Python
           --"tsserver",    -- JavaScript, TypeScript
           "html",        -- HTML

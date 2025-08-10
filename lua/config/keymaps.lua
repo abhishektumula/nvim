@@ -9,3 +9,6 @@
 --    source = "filesystem",
 --  })
 --end, { desc = "Toggle Neo-tree (clean sidebar)" })
+-- ~/.config/nvim/lua/custom/keymaps.lua
+-- Map <leader>e to open netrw (Ex)
+
