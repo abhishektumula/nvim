@@ -5,3 +5,12 @@ vim.opt.list = false
 vim.cmd([[autocmd VimEnter * if argc() == 0 | enew | endif]])
 vim.opt.cmdheight = 1
 vim.opt.linespace = -1
+vim.opt.scrolloff = 7
+vim.g.indent_blankline_enabled = false
+
+vim.opt.guicursor = "a:block"
+
+
+
+
+
