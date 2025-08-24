@@ -8,15 +8,13 @@ vim.opt.cmdheight = 1
 vim.opt.colorcolumn = "80"
 vim.opt.showmode = true
 -- important
-vim.cmd.colorscheme("nord")
+vim.cmd.colorscheme("everforest")
 -- important
 vim.opt.scrolloff = 7
 -- Make all keywords bold
 vim.cmd("highlight Keyword gui=bold cterm=bold")
-
 -- Make all functions bold
 vim.cmd("highlight Function gui=bold cterm=bold")
-
 -- (Optional) Make types, constants, and identifiers bold too
 vim.cmd("highlight Type gui=bold cterm=bold")
 vim.cmd("highlight Constant gui=bold cterm=bold")
