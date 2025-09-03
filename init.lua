@@ -24,22 +24,6 @@ vim.opt.guicursor = "a:block"
 -- Auto-remove extra blank lines at EOF, keep max 9
 
 -- Ensure exactly 9 blank lines at EOF
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function()
-    local save_cursor = vim.fn.getpos(".")
-    vim.cmd([[
-      keepjumps keeppatterns %s/\(\n\)\{1,}\%$//e
-      for i in range(9)
-        $put =''
-      endfor
-    ]])
-    vim.fn.setpos(".", save_cursor)
-  end,
-})
-
-
-
 
 --Universal transparency overrides
 local transparent_groups = {
@@ -81,6 +65,12 @@ end
 
 vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE", underline = false })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE" })
+
+
+
+
+
+
 
 
 

@@ -16,17 +16,17 @@ return {
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup({
-        ensure_installed = {
-          "html",
-          "cssls",
-          "jdtls",
-          "emmet_ls",
-          "tailwindcss",
-          "pyright",     -- Python
-          "ts_ls",    -- JavaScript, TypeScript
-          "html",        -- HTML
-          "cssls",       -- CSS
-          "gopls",       -- Go
+          ensure_installed = {
+            "html",
+            "cssls",
+            "jdtls",
+            "emmet_ls",
+            "tailwindcss",
+            "pyright",     -- Python
+            "ts_ls",    -- JavaScript, TypeScript
+            "html",        -- HTML
+            "cssls",       -- CSS
+            --"gopls",       -- Go
         },
         automatic_installation = true,
       })
@@ -62,4 +62,12 @@ return {
     end,
   },
 }
+
+
+
+
+
+
+
+
 
